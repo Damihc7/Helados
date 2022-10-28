@@ -1,0 +1,97 @@
+:root{
+
+    --titulos:'Baloo 2', cursive;
+    --parrafos:'Montserrat', sans-serif;
+}
+/*Estilos globales*/
+h1, h2, h3{
+    font-family: var(--titulos);
+    font-size: 46px;
+    text-align: center;
+}
+
+p, a{
+    font-family: var(--parrafos);
+}
+body {
+    background-image: url("helados2.jpg");
+    background-size:100%;
+    
+    background-repeat: repeat; background-attachment: scroll; background-color: rgb(255, 204, 255);
+    font-family: var(--parrafos);
+    color: #000000;
+    font-size: 23px;}
+
+.container {
+    background-color: rgba(255,255,255,0.8);
+    border: solid 1px rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    width: 60%;
+    margin: auto;
+    border: blur(20px);
+    border-radius: 12px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+
+}
+.logo-img{
+    max-width: 40rem;
+    margin: 1rem 0;
+    border-radius: 29px;
+}
+.pt {
+    position: absolute;
+    top: 23%;
+    right: 80%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    border-radius: 50%;
+    
+}
+.pt2 {
+    position: absolute;
+    top: 98%;
+    right: 100%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    border-radius: 50%;
+}
+/** Gallery **/
+.gallery-section{width: 100%;}
+
+
+
+.gallery-content{
+    width: 90%;
+    margin:10px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 530px);
+    grid-gap: 50px;
+}
+.gallery-content .img-card{
+    width: 100%;
+    width: 100%;
+}
+.gallery-content .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+   
+   
+}
+
+.footer{
+    background-color: black;
+    padding: 0.4rem;
+    padding-bottom: 1rem;
+    color: white;
+    font-size: 1.0rem;
+    text-align: center;
+    border-radius: 12px;
+}
